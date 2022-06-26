@@ -1,3 +1,9 @@
 # IntelliJ
 *.iml
 .idea/*
+
+# Scala
+project/project/**
+project/target/**
+target/*
+

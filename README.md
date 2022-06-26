@@ -1,6 +1,6 @@
 # TestingInScala
 
-Version: 0.0.1 - 25 Jun 2022
+Version: 0.1.0 - 25 Jun 2022
 
 ## Description
 
