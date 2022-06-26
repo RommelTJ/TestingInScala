@@ -4,3 +4,4 @@
 
 # Scala
 ./testingscala/target/*
+./testingscala/project/target/*
