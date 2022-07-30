@@ -17,7 +17,7 @@ class AlbumTest extends AnyFunSpec with Matchers with GivenWhenThen {
     it ("can add an Artist object to the album", testTags = CustomTag) {
       info("Making sure Michael Jackson is the artist of Thriller")
       Given("The album Thriller by Michael Jackson")
-      val album = new Album("Thriller", 1981, List(new Artist("Michael", "Jackson")))
+      val album = new Album("Thriller", 1981, List(new Artist("Michael", None, "Jackson")))
 
       When("The album's artist is obtained")
       val artists = album.artists
@@ -44,7 +44,7 @@ class AlbumTest extends AnyFunSpec with Matchers with GivenWhenThen {
     it ("can add opt to not have any artists at construction time", CustomTag) { pending }
 
     ignore("can add a producer to an album at constructor time", CustomTag) {
-      new Album("Breezin", 1976, List(new Artist("George", "Benson")))
+      new Album("Breezin", 1976, List(new Artist("George", None, "Benson")))
       // TODO: Figure out this hypothetical test.
     }
 
