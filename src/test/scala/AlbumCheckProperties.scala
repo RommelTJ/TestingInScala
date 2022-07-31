@@ -11,7 +11,7 @@ object AlbumCheckProperties extends Properties("Testing Albums Thoroughly") {
 
   property("albums") = {
     Prop.forAll(albums)(album => {
-      println(s"album => $album")
+      // println(s"album => $album")
       album.title.isInstanceOf[String]
     })
   }
