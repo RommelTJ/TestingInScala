@@ -74,7 +74,7 @@ object VariousGenCheckProperties extends Properties("Various Generators") {
     (2, Gen.const("LCD Soundsystem")),
     (5, Gen.const("JJ"))
   ))(x => {
-    println(s"x => $x")
+    // println(s"x => $x")
     classify(x == "Phoenix", "Phoenix") {
       classify(x == "LCD Soundsystem", "LCD Soundsystem") {
         classify(x == "JJ", "JJ") {
